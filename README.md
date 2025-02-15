@@ -8,31 +8,34 @@ Provide detailed instructions for how you created the environment, either using 
 Assignment solution
 
 Launched an ubuntu VM on GCP
+
 SSH into the VM
+
 Updated the packages
+
 sudo apt update
 
-
 Installed Docker
-sudo apt install docker.io
 
+sudo apt install docker.io
     
 Created a Dockerfile 
+
 Vi Dockerfile
 
-
- 
 Created an index.html and style.css files
+
 Build docker image using Dockerfile
+
 sudo docker build -t my-image:latest .
 
-
 View the newly created docker image  
+
 sudo docker images
 
 
-
 Run docker container using this image
+
 sudo docker run -d - -name my-app -p 80:80 my-image:latest
 
  
@@ -43,5 +46,6 @@ sudo docker ps
 
 
 View the hosted service 
+
   Search  http://35.208.40.95/ on browser
 
